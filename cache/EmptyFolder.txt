@@ -1,0 +1,1 @@
+Make sure this folder has write permission. Used to cache thumbnails. 
