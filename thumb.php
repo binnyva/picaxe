@@ -12,8 +12,11 @@ if(file_exists($cache_file)) {
 	print file_get_contents($cache_file);
 
 } else {
+	// print "File '$img_file' not found.";
+	// dump($img_file);
 	$img = new Image($img_file);
 	$img->resize(200,0,false);
 	$img->save($cache_file);
 	$img->show();
+	// dump($img);
 }

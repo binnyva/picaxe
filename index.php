@@ -10,11 +10,10 @@ if(!$current_folder) {
 	exit;
 }
 
-
 if(strstr($current_folder, $base_folder) === false) die("Its not that easy. Put in more effort! :-P"); // Slight hack attempt
 
 $all_folders = ls('*', $current_folder, false, array('return_folders'));
-$all_images = ls('*.*', $current_folder, false, array('return_files'));
+$all_images = ls('*.{JPG,jpg,jpeg}', $current_folder, false, array('return_files'));
 
 render();
 

@@ -2,3 +2,9 @@
 	float:left;
 	margin:5px;
 }
+
+figure {
+	display: inline;
+	float: left;
+	margin: 0 5px;
+}
