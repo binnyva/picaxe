@@ -88,7 +88,7 @@ if(isset($crud) and $GLOBALS['template']->template == '') {
                 <!--  Controls are self-explanatory. Order can be changed. -->
                 <div class="pswp__counter"></div>
                 <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--download" title="Download"></button>
                 <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
                 <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
 
@@ -129,7 +129,7 @@ if(isset($crud) and $GLOBALS['template']->template == '') {
 <script src="<?php echo $config['site_url']; ?>bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="<?php echo $config['site_url']; ?>js/application.js" type="text/javascript"></script>
 <script src="<?php echo $abs ?>bower_components/photoswipe/dist/photoswipe.js"></script>
-<script src="<?php echo $abs ?>bower_components/photoswipe/dist/photoswipe-ui-default.min.js"></script>
+<script src="<?php echo $abs ?>bower_components/photoswipe/dist/photoswipe-ui-default.js"></script>
 <?php 
 echo $js_includes;
 ?>

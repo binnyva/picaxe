@@ -65,4 +65,4 @@ foreach($all_images as $f) {
 
 <?php
 // Save the size cache....
-if(!file_exists($image_size_cache_file)) file_put_contents($image_size_cache_file, json_encode($image_sizes));
+if(isset($image_sizes) and $image_sizes and !file_exists($image_size_cache_file)) file_put_contents($image_size_cache_file, json_encode($image_sizes));
